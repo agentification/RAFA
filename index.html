@@ -155,7 +155,7 @@
       <div class="column is-full-width">
         
         <h2 class="title is-3">Method</h2>
-        <img src="./static/images/algo1.jpg" width="80%"/>
+        <img src="./static/images/algo1.jpg" width="90%"/>
         <div class="content has-text-justified">
           <p>At the t-th step of Algorithm 1, the LLM agent invokes the reasoning routine, which learns from the memory buffer and plans a future trajectory over a long horizon ("reason for future" in Line 6), takes the initial action of the planned trajectory (“act for now” in Line 7), and stores the collected feedback (state, action, and reward) in the memory buffer (Line 8). Upon the state transition of the external environment, the LLM agent reinvokes the reasoning routine to replan another future trajectory from the new state (Line 6 following Line 9). To ensure the learning and planning stability, we impose the switching condition (Line 10) to decide whether to incorporate the newest chunk of history into the information state, which is used in the reasoning routine as contexts.   
           </p>
