@@ -155,15 +155,15 @@
         </div>		
         <h2 class="title is-3">Experimental Results</h2>
         <h2 class="title is-4">(a) Game of 24</h2>
-  	<p>RAFA uses the ToT planner in Game of 24.</p>
+  	<p>RAFA uses the beam search planner (Algorithm 4 in our paper) in the Game of 24.</p>
 		<figure>
     		<img src="./static/images/result_24.jpg" width="100%"/>
 		<figcaption style="text-align: center; color: #888;">
-		    Sample efficiency on Game of 24.
+		    Results on the Game of 24.
   		</figcaption>
 		</figure>
         <h2 class="title is-4">(b) ALFWorld</h2>
-  	<p>RAFA uses the BFS planner in ALFWorld.</p>
+  	<p>RAFA uses the tree-search planner (Algorithm 2 in our paper) in the ALFWorld.</p>
 	      	<video id="teaser" autoplay muted loop playsinline height="110%">
         <source src="./static/images/demo_alf.mp4"
                 type="video/mp4">
@@ -172,25 +172,25 @@
 	      	<figure>
     		<img src="./static/images/combine_alf.svg" width="100%"/>
 		<figcaption style="text-align: center; color: #888;">
-		    Results on ALFWorld.
+		    Results on the ALFWorld.
   		</figcaption>
 		</figure>
         <h2 class="title is-4">(c) BlocksWorld</h2>
-  	<p>RAFA uses the MCTS planner in BlocksWorld.</p>
+  	<p>RAFA uses the MCTS planner (Algorithm 5 in our paper) in BlocksWorld.</p>
 	      	<figure>
     		<img src="./static/images/result_blocks1.jpg" width="100%"/>
 		<img src="./static/images/result_blocks2.jpg" width="100%"/>
 		<figcaption style="text-align: center; color: #888;">
-      Results on BlocksWorld.
+      Results on the BlocksWorld.
   		</figcaption>
 		</figure>
 
         <h2 class="title is-4">(d) Tic-Tac-Toe</h2>
-  	<p>RAFA uses the MCTS planner in Tic-Tac-Toe.</p>
+  	<p>RAFA uses the MCTS planner (Algorithm 5 in our paper) in Tic-Tac-Toe.</p>
 	      	<figure>
     		<img src="./static/images/combine_ttt.svg" width="100%"/>
 		<figcaption style="text-align: center; color: #888;">
-		    Results on Tic-Tac-Toe.
+		    Results on the Tic-Tac-Toe.
   		</figcaption>
 		</figure>
 		</figure>
