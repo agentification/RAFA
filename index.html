@@ -152,10 +152,8 @@
         <div class="content has-text-justified">
           <p>At the t-th step of RAFA (Algorithm 1), the LLM agent invokes the reasoning routine, which learns from the memory buffer and plans a future trajectory over a long horizon ("reason for future" in Line 6), takes the initial action of the planned trajectory (“act for now” in Line 7), and stores the collected feedback (state, action, and reward) in the memory buffer (Line 8). Upon the state transition of the external environment, the LLM agent reinvokes the reasoning routine to replan another future trajectory from the new state (Line 6 following Line 9). To ensure the learning and planning stability, we impose the switching condition (Line 10) to decide whether to incorporate the newest chunk of history into the information state, which is used in the reasoning routine as contexts. For different concrete settings, we use different implementations of the LLM learner-planner. Please check our paper for more details.
           </p>
-        </div>		
         <h2 class="title is-3">Experimental Results</h2>
 	<p>Our empirical validation shows that RAFA outperforms various existing frameworks in interactive decision-making tasks, including ALFWorld, BlocksWorld, Game of 24, and a new benchmark based on TicTacToe. In a few benchmarks, it achieves nearly perfect scores.</p>
-  <p> </p>
         <h3 class="title is-4">(a) Game of 24</h3>
 	<p>Game of 24 is a mathematical puzzle to obtain 24 from four natural numbers through basic arithmetic operations. RAFA uses the beam search planner (Algorithm 4 in our paper) in the Game of 24.</p>
 		<figure>
